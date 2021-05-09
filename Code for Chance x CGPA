@@ -1,0 +1,35 @@
+import pandas as pd
+from sklearn import linear_model
+import matplotlib.pyplot as plt
+
+
+# Load data
+file = Admission_Predict_Ver1.1.csv'
+df = pd.read_csv(file)
+
+X = df['CGPA'].values.reshape(-1,1)
+Y = df['Chance'].values
+
+# Train
+
+adm = linear_model.LinearRegression()
+model = adm.fit(X, Y)
+response = model.predict(X)
+
+# Evaluate
+
+r2 = model.score(X, Y)
+
+#Plot
+
+plt.style.use('default')
+plt.style.use('ggplot')
+
+fig, ax = plt.subplots(figsize=(9, 5))
+
+ax.plot(X, response, color='k', label='Regression model')
+ax.scatter(X, Y, facecolor='blue', alpha=0.7, label='Sample data', marker='+' )
+ax.set_ylabel('Chance of Admit', fontsize=14)
+ax.set_xlabel('CGPA', fontsize=14)
+ax.legend(facecolor='white', fontsize=11)
+ax.set_title('$R^2= %.2f$' % r2, fontsize=15)
