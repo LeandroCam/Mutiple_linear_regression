@@ -1,0 +1,31 @@
+import pandas as pd
+import numpy as np
+from sklearn import linear_model
+from sklearn.metrics import r2_score
+from sklearn.model_selection import train_test_split
+
+# Load data
+file = pd.read_csv('Admission_Predict_Ver1.1.csv')
+features = ['GRE Score', 'TOEFL Score', 'University Rating', 'SOP','LOR' , 'CGPA', 'Research', ]
+target = 'Chance'
+
+x = np.array(file[features])
+y = np.array(file[target])
+
+# Split the data into training/testing sets
+X_train, X_test, Y_train, Y_test = train_test_split(x,y)
+
+# Create linear model and train it
+lm = linear_model.LinearRegression()
+lm.fit(X_train, Y_train)
+
+# Use model to predict on Test data
+lmp = lm.predict(X_test)
+
+# Intercept
+print('Intercept_:', lm.intercept_)
+# Coefficient
+print('Coefficient:', lm.coef_)
+# The coefficient of determination: 1 is perfect prediction
+print('Coefficient of determination: %.2f'
+      % r2_score(Y_test, lmp))
