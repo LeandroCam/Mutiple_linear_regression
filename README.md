@@ -166,11 +166,11 @@ print('Coefficient of determination: %.2f'
 
 figure results
 
-We can see that we improve the results to 0.83, lets try without TOEFL SCORE.
+We can see that we improve the results to 0.83, lets try without feature TOEFL SCORE.
 
 figure Results
 
-Note.value of individual regression coefficient may not be reliable under multicollinearity, it does not undermine the prediction power of the mode
+Note.value of individual regression coefficient may not be reliable under multicollinearity, it does not undermine the prediction power of the model
 
 TOFL score  variable dont improve our model, using her is simply add random noise. If we add it as a predictor to our model, we will most likely notice that our accuracy drops. This is because, while it is added information, it does not correlate well with the other information you have provided or dont have relation with the target(some cases add a feature can even drop the score).
 We have ways to improve the model but for this model we stop here.
