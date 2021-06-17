@@ -43,7 +43,7 @@ file = 'Admission_Predict_Ver1.1.csv'
 df = pd.read_csv(file)
 features = ['GRE Score', 'TOEFL Score', 'University Rating', 'SOP','LOR' , 'CGPA', 'Research','Chance' ]
 
-# Train/tst split
+# Train/test split
 df_train, df_test = train_test_split(df)
 df_train = df_train[features]
 df_test = df_test[features]
@@ -172,7 +172,7 @@ We can see that we improve the results to 0.83, lets try without feature TOEFL S
 
 Note.value of individual regression coefficient may not be reliable under multicollinearity, it does not undermine the prediction power of the model
 
-TOFL score  variable dont improve our model, using her is simply add random noise. If we add it as a predictor to our model, we will most likely notice that our accuracy drops. This is because, while it is added information, it does not correlate well with the other information you have provided or dont have relation with the target(some cases add a feature can even drop the score).
+TOFL score  variable dont improve our model, using it is simply add random noise. If we add it as a predictor to our model, we will most likely notice that our accuracy drops. This is because, while is it added information, it does not correlate well with the other information you have provided or dont have relation with the target(some cases add a feature can even drop the score).
 We have ways to improve the model but for this model we stop here.
 
 
