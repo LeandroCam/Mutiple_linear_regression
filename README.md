@@ -16,7 +16,7 @@ df.head()
 
 ```
 
-[head](https://user-images.githubusercontent.com/83521233/122256502-8159be00-cea5-11eb-9ac5-49af270a9a20.png)
+![head](https://user-images.githubusercontent.com/83521233/122256502-8159be00-cea5-11eb-9ac5-49af270a9a20.png)
 
 As we can see they are all numericall values so we don't need to use and encoding thecnics such as ordinal encoder
 or one-hot-encoder. 
@@ -25,7 +25,7 @@ Response Variable = Chance of Admit
 
 We have seven features to predict the response variable. Based on the permutation feature importances shown in figure, GCPA is the most important feature, and TOFL Score is the last important feature.
 
-[Importance](https://user-images.githubusercontent.com/83521233/122263905-52474a80-cead-11eb-920a-9685c49e9de6.png)
+![Importance](https://user-images.githubusercontent.com/83521233/122263905-52474a80-cead-11eb-920a-9685c49e9de6.png)
 
 Code for permutation feature importance
 
@@ -75,7 +75,7 @@ Now we do linear regression with chance Vs CGPA a simple linear regression that 
 
 
 
-[Chance vs CGPA](https://user-images.githubusercontent.com/83521233/122263888-4f4c5a00-cead-11eb-8bf9-013edaa76550.png)
+![Chance vs CGPA](https://user-images.githubusercontent.com/83521233/122263888-4f4c5a00-cead-11eb-8bf9-013edaa76550.png)
 
 CGPA is the most important feature regarding Chance of addimission but CGPA alone captured only 78% of variance of the data.
 
