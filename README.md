@@ -18,12 +18,12 @@ df.head()
 
 ![head](https://user-images.githubusercontent.com/83521233/122256502-8159be00-cea5-11eb-9ac5-49af270a9a20.png)
 
-As we can see they are all numericall values so we don't need to use and encoding thecnics such as ordinal encoder
+As we can see they are all numericall values so we don't need to use and encoding tecnics such as ordinal encoder
 or one-hot-encoder. 
 
 Response Variable = Chance of Admit
 
-We have seven features to predict the response variable. Based on the permutation feature importances shown in figure, GCPA is the most important feature, and TOFL Score is the last important feature.
+We have seven features to predict the response variable. Based on the permutation feature importances shown in figure, GCPA is the most important feature, and TOFL Score is the less important.
 
 ![Importance](https://user-images.githubusercontent.com/83521233/122263905-52474a80-cead-11eb-920a-9685c49e9de6.png)
 
