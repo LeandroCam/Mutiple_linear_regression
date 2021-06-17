@@ -140,7 +140,7 @@ from sklearn.model_selection import train_test_split
 # Load data
 file = pd.read_csv('Admission_Predict_Ver1.1.csv')
 features = ['GRE Score', 'TOEFL Score', 'University Rating', 'SOP','LOR' , 'CGPA', 'Research', ]
-target = 'Chance'
+target = 'Chance of Admit'
 
 x = np.array(file[features])
 y = np.array(file[target])
