@@ -93,7 +93,7 @@ file = Admission_Predict_Ver1.1.csv'
 df = pd.read_csv(file)
 
 X = df['CGPA'].values.reshape(-1,1)
-Y = df['Chance'].values
+Y = df['Chance of Admit'].values
 
 # Train
 
