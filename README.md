@@ -164,11 +164,11 @@ print('Coefficient of determination: %.2f'
       % r2_score(Y_test, lmp))
 ```
 
-figure results
+![result](https://user-images.githubusercontent.com/83521233/122311903-922c2300-cee9-11eb-8508-247f794422f7.png)
 
 We can see that we improve the results to 0.83, lets try without feature TOEFL SCORE.
 
-figure Results
+![rsult](https://user-images.githubusercontent.com/83521233/122311903-922c2300-cee9-11eb-8508-247f794422f7.png)
 
 Note.value of individual regression coefficient may not be reliable under multicollinearity, it does not undermine the prediction power of the model
 
