@@ -18,7 +18,7 @@ df.head()
 
 ![head](https://user-images.githubusercontent.com/83521233/122256502-8159be00-cea5-11eb-9ac5-49af270a9a20.png)
 
-As we can see they are all numericall values so we don't need to use and encoding tecnics such as ordinal encoder
+As we can see they are all numericall values so we don't need to use any encoding techniques such as ordinal encoder
 or one-hot-encoder. 
 
 Response Variable = Chance of Admit
