@@ -71,7 +71,7 @@ fig.tight_layout()
 plt.show()
 ```
 
-Now we do linear regression with chance Vs CGPA a simple linear regression that can be ploted in 2d so we can star to understand better the model
+Now we do linear regression with chance Vs CGPA a simple linear regression that can be ploted in 2d so we can start to understand better the model
 
 
 
