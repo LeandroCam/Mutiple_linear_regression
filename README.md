@@ -170,7 +170,7 @@ We can see that we improve the results to 0.83, lets try without feature TOEFL S
 
 ![rsult](https://user-images.githubusercontent.com/83521233/122311903-922c2300-cee9-11eb-8508-247f794422f7.png)
 
-Note.value of individual regression coefficient may not be reliable under multicollinearity, it does not undermine the prediction power of the model
+Note.Value of individual regression coefficient may not be reliable under multicollinearity, it does not undermine the prediction power of the model
 
 TOFL score  variable dont improve our model, using it is simply add random noise. If we add it as a predictor to our model, we will most likely notice that our accuracy drops. This is because, while is it added information, it does not correlate well with the other information you have provided or dont have relation with the target(some cases add a feature can even drop the score).
 We have ways to improve the model but for this model we stop here.
